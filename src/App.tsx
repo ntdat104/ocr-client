@@ -1,4 +1,5 @@
 import React from "react";
+import OCR from "./assets/ocr.png";
 import "./App.css";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <div>
+        <img src={OCR} />
         <input type="file" onChange={(e: any) => setFile(e.target.files[0])} />
       </div>
     </>
